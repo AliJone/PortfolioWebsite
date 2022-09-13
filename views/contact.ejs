@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevBlog - Ali Jone's Personal Blog</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./public/images/favicon.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./public/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <style>
+      html{scroll-behavior:smooth}
+
+.btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
+   border-radius: 100px;
+}
+.btn-group>.btn-group:not(:first-child)>.btn, .btn-group>.btn:not(:first-child) {
+    border-radius: 100px;
+}
+      .logo-light{
+        width: 70px !important;
+      }
+      .logo-dark{
+        width: 70px !important;
+      }
+      footer{
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      footer a img{
+        display: block ;
+        margin: auto !important;
+      }
+      footer a{
+        display: block ;
+        margin: auto !important;
+      }
+      .typed-out{
+        display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  /* animation-iteration-count: infinite; */
+  animation: 
+    typing 3s infinite;
+  width: 0;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+.btn-primary {
+    background: var(--accent);
+    color: var(--white);
+    padding: 0.6875rem 1.1875rem;
+}
+.btn-secondary {
+    background: var(--action-secondary);
+    color: var(--foreground-secondary);
+    padding: 0.5rem 1rem;
+    border: 3px solid var(--foreground-tertiary);
+}
+
+.btn-secondary {
+    background: var(--action-secondary);
+    color: var(--foreground-secondary);
+    padding: 0.5rem 1rem;
+    border: 3px solid var(--foreground-tertiary);
+}
+.btn-secondary {
+    background: var(--action-secondary);
+    color: var(--foreground-secondary);
+    padding: 0.5rem 1rem;
+    border: 3px solid var(--foreground-tertiary);
+}
+.btn {
+    min-width: 10rem;
+    border-radius: 100px;
+}
+.forms{
+    display: block !important;
+}
+.form h1{
+text-align: center;
+}
+main h1{
+    margin-bottom: 0px !important;
+}
+.hero .h1 {
+     margin-bottom: 0; 
+}
+.mid{
+    display: block;
+    margin: auto;
+    margin-top: 50px !important;
+}
+    </style>
+</head>
+
+<body class="dark-theme">
+
+  <!--
+    - #HEADER
+  -->
+
+  <header>
+
+    <div class="container">
+
+      <nav class="navbar">
+
+        <a href="index.html">
+          <img src="./public/images/logo-light.png" alt="AliJone logo" width="150" class="logo-light">
+          <img src="./public/images/logo-dark.png" alt="AliJone logo" width="150" class="logo-dark">
+        </a>
+
+        <div class="btn-group">
+
+          <button class="theme-btn theme-btn-mobile light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+
+          <button class="nav-menu-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="flex-wrapper">
+
+          <ul class="desktop-nav">
+
+            <li>
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+
+            <li>
+              <a href="index.html#blog" class="nav-link">Projects</a>
+            </li>
+
+            <li>
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+
+          </ul>
+
+          <button class="theme-btn theme-btn-desktop light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="mobile-nav">
+
+          <button class="nav-close-btn">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <div class="wrapper">
+
+            <p class="h3 nav-title">Main Menu</p>
+
+            <ul>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#blog" class="nav-link">Projects</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+
+
+  <main>
+
+
+    <div class="hero">
+
+      <div class="container">
+
+        <div class="left">
+
+          <h1 class="h1">
+            Hi, I'm <b>Ali&nbsp;Jone</b>.
+            <br> <p class="typed-out">Web Developer</p> 
+          </h1>
+
+          <p class="h2" style="
+          padding-block-end: 1rem;
+      ">
+            Welcome to my website
+          </p>
+
+          <div class="btn-group">
+            <a href="/contact.html" class="btn btn-primary">Contact Us</a>
+            <a href="/index#blog" class="btn btn-secondary">Projects</a>
+          </div>
+
+        </div>
+
+        <div class="right">
+
+          <div class="pattern-bg"></div>
+          <div class="img-box">
+            <img src="./public/images/hero.png" alt="Ali Jone" class="hero-img">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+    <div class="main">
+        <div class="container forms">
+            <div class="row align-items-stretch no-gutters contact-wrap">
+                <div class="col-md-12">
+                    <div class="form h-100">
+                        <h1 class="h1">Contact Us</h1>
+                        <form action="https://formsubmit.co/alijone754rats@gmail.com" class="mb-5" method="post" id="contactForm" name="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 form-group mb-3">
+                                    <label for="" class="col-form-label h3">Name *</label>
+                                    <input type="text" class="form-control" name="name" id="name"
+                                        placeholder="Your name" required>
+                                </div>
+                                <div class="col-md-6 form-group mb-3">
+                                    <label for="" class="col-form-label h3">Email *</label>
+                                    <input type="email" class="form-control" name="email" id="email"
+                                        placeholder="Your email">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 form-group mb-3">
+                                    <label for="message" class="col-form-label h3">Message *</label>
+                                    <textarea class="form-control" name="message" id="message" cols="30" rows="4"
+                                        placeholder="Write your message"></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 form-group">
+                                  <button type="submit" value="Send Message"
+                                  class="btn btn-primary mid">Send</button>
+                                    <span class="submitting"></span>
+                                </div>
+                            </div>
+                        </form>
+    
+                        <div id="form-message-warning mt-4"></div>
+                        
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </main>
+
+
+
+
+
+  <!--
+    - #FOOTER
+  -->
+
+  <footer>
+
+
+
+        <a href="index.html" class="footer-logo">
+          <img src="./public/images/logo-light.png" alt="DevBlog's Logo" width="150" class="logo-light">
+          <img src="./public/images/logo-dark.png" alt="DevBlog's Logo" width="150" class="logo-dark">
+        </a>
+
+       
+  </footer>
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script>
+    let ind = 0;
+    const position = document.querySelector('.typed-out');
+    const work = ['Web Developer', 'AI Enthusiast', 'Student'];
+    console.log(position.innerHTML);
+    typewriter = () => {
+      if(ind == work.length-1){
+        ind = -1;
+      }
+      ind++;
+      position.innerHTML = work[ind];
+
+      
+    }
+
+    setInterval(typewriter, 3000);
+
+  </script>
+  <script src="./public/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevBlog - Ali Jone's Personal Blog</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./public/images/favicon.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./public/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <style>
+      html{scroll-behavior:smooth}
+      .logo-light{
+        width: 70px !important;
+      }
+      .logo-dark{
+        width: 70px !important;
+      }
+      footer{
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      footer a img{
+        display: block ;
+        margin: auto !important;
+      }
+      footer a{
+        display: block ;
+        margin: auto !important;
+      }
+      .typed-out{
+        display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  /* animation-iteration-count: infinite; */
+  animation: 
+    typing 3s infinite;
+  width: 0;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+.h3{
+  text-align: center;
+}
+    </style>
+</head>
+
+<body class="dark-theme">
+
+
+
+    <div class="hero">
+
+      <div>
+
+          <p class="h3" >
+            404 - page Not Found
+          </p>
+
+
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer>
+
+
+
+        <a href="index.html" class="footer-logo">
+          <img src="./public/images/logo-light.png" alt="DevBlog's Logo" width="150" class="logo-light">
+          <img src="./public/images/logo-dark.png" alt="DevBlog's Logo" width="150" class="logo-dark">
+        </a>
+
+       
+  </footer>
+
+
+
+  </main>
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./public/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script>
+    let ind = 0;
+    const position = document.querySelector('.typed-out');
+    const work = ['Web Developer', 'AI Enthusiast', 'Student'];
+    console.log(position.innerHTML);
+    typewriter = () => {
+      if(ind == work.length-1){
+        ind = -1;
+      }
+      ind++;
+      position.innerHTML = work[ind];
+
+      
+    }
+
+    setInterval(typewriter, 3000);
+
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
