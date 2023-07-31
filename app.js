@@ -46,7 +46,7 @@ app.get('/',(req,res)=>{
         date: "10 Sep 2020",
         },
         {
-            imgURL: "/public/images/blog-3.png",
+            imgURL: "/public/images/NehjulBalagah.png",
             altname: "Nahj UL Balagha App",
             projTech: ["Flutter", "Firebase Auth", "Firebase Firestore", "BLoC"],
             projName: "Nahj UL Balagha",
