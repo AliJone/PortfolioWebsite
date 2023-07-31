@@ -220,7 +220,12 @@ html {
 .btn-secondary:hover { border-color: var(--accent) !important; }
 
 
-
+.aside .wrapper {
+  background: var(--background-primary);
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 5px 5px hsla(0, 0%, 0%, 0.05);
+}
 
 
 /*-----------------------------------*\ 
@@ -495,9 +500,6 @@ header .btn-group {
   #ASIDE
 \*-----------------------------------*/
 
-.aside { display: none; }
-
-
 
 
 
@@ -563,6 +565,23 @@ footer .wrapper { text-align: center; }
  */
 
 @media (min-width: 550px) {
+  .topics{
+    display: none;
+  }
+  .tags{
+    display: none;
+  }
+  
+  .social-link{
+    display: flex;
+    gap: 10px;
+  }
+  .contact { margin-bottom: 3rem; }
+
+  .contact p {
+    color: var(--foreground-secondary);
+    margin-bottom: 1rem;
+  }
 
   :root {
 
@@ -608,6 +627,23 @@ footer .wrapper { text-align: center; }
  */
 
 @media (min-width: 650px) {
+  .topics{
+    display: none;
+  }
+  .tags{
+    display: none;
+  }
+  
+  .social-link{
+    display: flex;
+    gap: 10px;
+  }
+  .contact { margin-bottom: 3rem; }
+
+  .contact p {
+    color: var(--foreground-secondary);
+    margin-bottom: 1rem;
+  }
 
   :root {
 
@@ -721,12 +757,28 @@ footer .wrapper { text-align: center; }
  */
 
 @media (min-width: 768px) {
-
+  .topics{
+    display: none;
+  }
+  .tags{
+    display: none;
+  }
+  
+  .social-link{
+    display: flex;
+    gap: 10px;
+  }
   /**
    * REUSED STYLE 
    */
 
   .container { max-width: 800px; }
+  .contact { margin-bottom: 3rem; }
+
+  .contact p {
+    color: var(--foreground-secondary);
+    margin-bottom: 1rem;
+  }
 
 }
 
@@ -740,6 +792,15 @@ footer .wrapper { text-align: center; }
 
 @media (min-width: 1024px) {
 
+  .topics{
+    display: block;
+  }
+  .tags{
+    display: block;
+  }
+  .aside{
+    display: block;
+  }
   :root {
 
     /**
@@ -925,12 +986,6 @@ footer .wrapper { text-align: center; }
     line-height: 1.3;
   }
 
-  .aside .wrapper {
-    background: var(--background-primary);
-    border-radius: 10px;
-    padding: 40px;
-    box-shadow: 0 5px 5px hsla(0, 0%, 0%, 0.05);
-  }
 
   .topics { margin-bottom: 3rem; }
 
