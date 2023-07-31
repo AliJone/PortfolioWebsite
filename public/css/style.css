@@ -553,7 +553,17 @@ footer .wrapper { text-align: center; }
 .copyright a:hover { text-decoration: underline; }
 
 
+.topics{
+  display: none;
+}
+.tags{
+  display: none;
+}
 
+.social-link{
+  display: flex;
+  gap: 10px;
+}
 
 
 /*-----------------------------------*\ 
