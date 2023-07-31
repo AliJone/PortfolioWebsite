@@ -5,13 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DevBlog - Ali Jone's Personal Blog</title>
-
-  <!--
-    - favicon
-  -->
+  <title>Ali Jone Merchant - Portfolio</title>
   <link rel="shortcut icon" href="./public/images/favicon.ico" type="image/x-icon">
-
+  <meta name="description" content="Welcome to the official website of Ali Jone Merchant.">
+  <meta name="keywords" content="Ali Jone Merchant, Official Website, Information">
+  <meta property="og:title" content="Ali Jone Merchant">
+  <meta property="og:description" content="Welcome to the official website of Ali Jone Merchant.">
   <!--
     - custom css link
   -->
@@ -52,6 +51,24 @@
   animation: 
     typing 3s infinite;
   width: 0;
+}
+
+.forms{
+    display: block !important;
+}
+.form h1{
+text-align: center;
+}
+main h1{
+    margin-bottom: 0px !important;
+}
+.hero .h1 {
+     margin-bottom: 0; 
+}
+.mid{
+    display: block;
+    margin: auto;
+    margin-top: 50px !important;
 }
 @keyframes typing {
   from { width: 0 }
@@ -103,7 +120,7 @@
             </li>
 
             <li>
-              <a href="contact.html" class="nav-link">Contact</a>
+              <a href="#contact" class="nav-link">Contact</a>
             </li>
 
           </ul>
@@ -174,7 +191,7 @@
           </p>
 
           <div class="btn-group">
-            <a href="/contact.html" class="btn btn-primary">Contact Us</a>
+            <a href="/#contact" class="btn btn-primary">Contact Us</a>
             <a href="#blog" class="btn btn-secondary">Projects</a>
           </div>
 
@@ -220,7 +237,10 @@
 
               <div class="blog-content-wrapper">
 
-                <button class="blog-topic text-tiny"><%= project.projTech %> </button>
+                <% project.projTech.forEach(function(tech) { %>
+                  <button class="blog-topic text-tiny" style="display: inline;"><%= tech %></button>
+              <% }); %>
+              
 
                 <h3>
                   <a href="<%= project.projURL %> " target=”_blank” class="h3">
@@ -258,11 +278,7 @@
 
           </div>
 
-          <button class="btn load-more">Load More</button>
-
         </div>
-
-
 
 
 
@@ -274,14 +290,14 @@
 
           <div class="topics">
 
-            <h2 class="h2">Topics</h2>
+            <h2 class="h2">Core Competencies</h2>
 
             <a class="topic-btn">
               <div class="icon-box">
                 <ion-icon name="server-outline"></ion-icon>
               </div>
 
-              <p>Database</p>
+              <p>Full Stack Development</p>
             </a>
 
             <a class="topic-btn">
@@ -289,7 +305,7 @@
                 <ion-icon name="accessibility-outline"></ion-icon>
               </div>
 
-              <p>Accessibility</p>
+              <p>User Experience Design</p>
             </a>
 
             <a class="topic-btn">
@@ -297,31 +313,56 @@
                 <ion-icon name="rocket-outline"></ion-icon>
               </div>
 
-              <p>Web Performance</p>
+              <p>Augmented Reality Dev</p>
             </a>
 
           </div>
 
           <div class="tags">
 
-            <h2 class="h2">Tags</h2>
+            <h2 class="h2">Skills</h2>
 
             <div class="wrapper">
 
-              <button class="hashtag">#mongodb</button>
-              <button class="hashtag">#nodejs</button>
-              <button class="hashtag">#a11y</button>
-              <button class="hashtag">#mobility</button>
-              <button class="hashtag">#inclusion</button>
-              <button class="hashtag">#webperf</button>
-              <button class="hashtag">#optimize</button>
-              <button class="hashtag">#performance</button>
+              <button class="hashtag"> java</button>
+<button class="hashtag"> python</button>
+<button class="hashtag"> go</button>
+<button class="hashtag"> javascript</button>
+<button class="hashtag"> html</button>
+<button class="hashtag"> css</button>
+<button class="hashtag"> bootstrap</button>
+<button class="hashtag"> adobe-photoshop</button>
+<button class="hashtag"> react</button>
+<button class="hashtag"> next</button>
+<button class="hashtag"> nodejs</button>
+<button class="hashtag"> expressjs</button>
+<button class="hashtag"> ejs</button>
+<button class="hashtag"> mongoosejs</button>
+<button class="hashtag"> liqvidjs</button>
+<button class="hashtag"> mongodb</button>
+<button class="hashtag"> flutter</button>
+<button class="hashtag"> unity3d</button>
+<button class="hashtag"> agora</button>
+<button class="hashtag"> pun2</button>
+<button class="hashtag"> webgl</button>
+<button class="hashtag"> arspark</button>
+<button class="hashtag"> arjs</button>
+<button class="hashtag"> ciscopackettracer</button>
+<button class="hashtag"> numpy</button>
+<button class="hashtag"> pandas</button>
+<button class="hashtag"> selenium</button>
+<button class="hashtag"> userexperiencedesign</button>
+<button class="hashtag"> augmentedreality</button>
+<button class="hashtag"> fullstackdevelopment</button>
+<button class="hashtag"> naturallanguageprocessing</button>
+<button class="hashtag"> projectmanagement</button>
+
 
             </div>
 
           </div>
 
-          <div class="contact">
+          <div id="contact" class="contact">
 
             <h2 class="h2">Let's Talk</h2>
 
@@ -335,13 +376,14 @@
               <ul class="social-link">
 
                 <li>
-                  <a href="https://discordapp.com/users/3502/" target="_blank" class="icon-box discord">
-                    <ion-icon name="logo-discord"></ion-icon>
+                  <a href="https://wa.me/+923182232414" target="_blank" class="icon-box whatsapp">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
                   </a>
                 </li>
+                
 
                 <li>
-                  <a href="https://pk.linkedin.com/in/ali-jone-16190b1a9" target="_blank" class="icon-box twitter">
+                  <a href="https://www.linkedin.com/in/ali-jone-merchant" target="_blank" class="icon-box twitter">
                     <ion-icon name="logo-linkedin"></ion-icon>
                   </a>
                 </li>
@@ -358,26 +400,6 @@
 
           </div>
 
-          <div class="newsletter">
-
-            <h2 class="h2">Newsletter</h2>
-
-            <div class="wrapper">
-
-              <p>
-                Subscribe to our newsletter to be among the first to keep up with the latest updates.
-              </p>
-
-              <form action="#">
-                <input type="email" name="email" placeholder="Email Address" required>
-
-                <button type="submit" class="btn btn-primary">Subscribe</button>
-              </form>
-
-            </div>
-
-          </div>
-
         </div>
 
       </div>
@@ -385,12 +407,6 @@
     </div>
 
   </main>
-
-
-
-
-
-
 
   <footer>
 

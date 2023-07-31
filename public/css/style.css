@@ -195,29 +195,29 @@ html {
 }
 
 .btn {
-  min-width: 10rem;
-  border-radius: 100px;
+  min-width: 10rem !important;
+  border-radius: 100px !important;
 }
 
 .btn-primary {
-  background: var(--accent);
-  color: var(--white);
-  padding: 0.6875rem 1.1875rem;
+  background: var(--accent) !important;
+  color: var(--white) !important;
+  padding: 0.6875rem 1.1875rem !important;
 }
 
 .btn-primary:hover {
-  background: var(--foreground-secondary);
-  color: var(--action-primary);
+  background: var(--foreground-secondary) !important;
+  color: var(--action-primary) !important;
 }
 
 .btn-secondary {
-  background: var(--action-secondary);
-  color: var(--foreground-secondary);
-  padding: 0.5rem 1rem;
-  border: 3px solid var(--foreground-tertiary);
+  background: var(--action-secondary) !important;
+  color: var(--foreground-secondary) !important;
+  padding: 0.5rem 1rem !important;
+  border: 3px solid var(--foreground-tertiary) !important;
 }
 
-.btn-secondary:hover { border-color: var(--accent); }
+.btn-secondary:hover { border-color: var(--accent) !important; }
 
 
 
@@ -227,21 +227,21 @@ html {
   #Extra style for dark theme
 \*-----------------------------------*/
 
-.dark-theme .btn-primary:hover { color: var(--background-primary); }
+.dark-theme .btn-primary:hover { color: var(--background-primary) !important; }
 
 .dark-theme .blog-topic {
-  background: var(--action-primary);
-  color: var(--foreground-secondary);
+  background: var(--action-primary) !important;
+  color: var(--foreground-secondary) !important;
 }
 
 .dark-theme .blog-topic:hover {
-  background: var(--foreground-primary);
-  color: var(--action-primary);
+  background: var(--foreground-primary) !important;
+  color: var(--action-primary) !important;
 }
 
-.dark-theme .load-more:hover { color: var(--white); }
+.dark-theme .load-more:hover { color: var(--white) !important; }
 
-.dark-theme .aside .h2 { color: var(--foreground-primary); }
+.dark-theme .aside .h2 { color: var(--foreground-primary) !important; }
 
 
 
